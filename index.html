@@ -380,6 +380,113 @@
   transform: translateY(-4px);
   box-shadow: 0 14px 32px rgba(0,0,0,0.4);
 }
+/* EDUCATION – PABLO STYLE */
+
+.education {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--accent);
+  max-width: 560px;
+  margin: 0 auto 72px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.education-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(201, 164, 92, 0.25);
+  border-color: rgba(201, 164, 92, 0.5);
+}
+
+.education-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.education-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(201, 164, 92, 0.15);
+  border: 1px solid rgba(201, 164, 92, 0.4);
+}
+
+.education-badge.completed {
+  background: rgba(201, 92, 92, 0.15);
+  border-color: rgba(201, 92, 92, 0.4);
+}
+
+.education-place {
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.education-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.education-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+
+.education-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.education-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+}
+
+.education-card h4 {
+  margin: 16px 0 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
     
   </style>
@@ -566,21 +673,72 @@
 </section>
 
     <!-- EDUCATION -->
-    <section class="section" id="education">
-      <h2>Education</h2>
+    <section class="section education" id="education">
+  <div class="label">ACADEMIC BACKGROUND</div>
+  <h2 class="section-title">Education</h2>
+  <p class="section-subtitle">
+    Building a strong foundation in analytics, statistics, and business
+  </p>
 
-      <div class="card">
-        <strong>MSc Business Analytics</strong><br>
-        <span class="muted">University College London · 2025–2026</span>
+  <div class="education-grid">
+
+    <!-- MSc -->
+    <div class="education-card current">
+      <div class="education-badge">Current</div>
+      <div class="education-icon">🎓</div>
+
+      <h3>MSc Business Analytics</h3>
+      <p class="education-place">University College London (UCL)</p>
+      <span class="education-date">Sep 2025 – Aug 2026</span>
+
+      <div class="education-divider"></div>
+
+      <div class="education-meta">
+        <span class="education-chip">Data Science Internship Project</span>
       </div>
 
-      <br>
-
-      <div class="card">
-        <strong>BSc Economics (Upper Second Class Honours)</strong><br>
-        <span class="muted">Swansea University · 2021–2024</span>
+      <h4>Key Modules</h4>
+      <div class="skill-tags">
+        <span>Predictive Analytics (Python)</span>
+        <span>Programming for Business Analytics</span>
+        <span>Data Engineering (SQL, Python)</span>
+        <span>Marketing Analytics (R)</span>
+        <span>NLP</span>
+        <span>Business Strategy & Analytics</span>
+        <span>Statistical Foundations</span>
+        <span>Operations Analytics</span>
       </div>
-    </section>
+    </div>
+
+    <!-- BSc -->
+    <div class="education-card completed">
+      <div class="education-badge completed">Completed</div>
+      <div class="education-icon">🏛️</div>
+
+      <h3>BSc Economics (Upper Second Class Honours)</h3>
+      <p class="education-place">Swansea University</p>
+      <span class="education-date">Sep 2021 – Sep 2024</span>
+
+      <div class="education-divider"></div>
+
+      <div class="education-meta">
+        <span class="education-chip">Upper 2:1</span>
+        <span class="education-chip">Vice President – Economics Society</span>
+      </div>
+
+      <h4>Key Modules</h4>
+      <div class="skill-tags">
+        <span>Time Series Econometrics</span>
+        <span>Microeconometrics</span>
+        <span>Panel Data Models</span>
+        <span>Advanced Macroeconomics</span>
+        <span>Advanced Microeconomics</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- PROJECTS -->
     <section class="section" id="projects">
