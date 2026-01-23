@@ -226,6 +226,88 @@
         margin: auto;
       }
     }
+    /* ABOUT SECTION – PABLO STYLE */
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  color: var(--accent);
+  max-width: 520px;
+  margin-bottom: 64px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+}
+
+.about-text h3 {
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.about-mini-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.about-mini-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.about-mini-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.about-skills {
+  display: grid;
+  gap: 24px;
+}
+
+.skill-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.skill-heading {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 
@@ -285,20 +367,114 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
-      <h2>About</h2>
+   <section class="section about" id="about">
+  <div class="label">ABOUT ME</div>
 
-      <div class="about-highlights">
-        <div class="card">🎓 MSc Business Analytics @ UCL</div>
-        <div class="card">📊 Economics & Statistics Background</div>
-        <div class="card">🤖 Machine Learning for Business Decisions</div>
+  <h2 class="about-title">Turning Data Into Decisions</h2>
+  <p class="about-subtitle">
+    Combining technical expertise with business acumen to deliver
+    actionable insights
+  </p>
+
+  <div class="about-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="about-text">
+      <h3>Background</h3>
+
+      <p>
+        I’m an MSc Business Analytics student at University College London,
+        specialising in machine learning, predictive analytics, and
+        data-driven decision making. I graduated with an Upper Second Class
+        Honours degree in BSc Economics from Swansea University.
+      </p>
+
+      <p>
+        My academic and project experience focuses on applying statistical
+        and machine learning methods to real-world business problems across
+        marketing, consulting, and strategy. I work extensively with
+        structured and unstructured data to generate actionable insights
+        that support decision-makers.
+      </p>
+
+      <p>
+        I am particularly interested in analytics-driven consulting and
+        business-focused data science roles, where analytical rigor and
+        commercial understanding intersect.
+      </p>
+
+      <div class="about-cards">
+        <div class="about-mini-card">
+          <strong>Data Analysis</strong>
+          <span>SQL pipelines & dashboards</span>
+        </div>
+
+        <div class="about-mini-card">
+          <strong>Machine Learning</strong>
+          <span>Predictive models & segmentation</span>
+        </div>
+
+        <div class="about-mini-card">
+          <strong>Business Analytics</strong>
+          <span>Strategy & decision support</span>
+        </div>
+
+        <div class="about-mini-card">
+          <strong>Data Visualisation</strong>
+          <span>Insights & reporting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="about-skills">
+
+      <div class="skill-box">
+        <div class="skill-heading">Programming Languages</div>
+        <div class="skill-tags">
+          <span>Python</span><span>R</span><span>SQL</span>
+        </div>
       </div>
 
-      <p class="muted">
-        I am an MSc Business Analytics student at University College London with a strong
-        foundation in economics, statistics, and machine learning.
-      </p>
-    </section>
+      <div class="skill-box">
+        <div class="skill-heading">Machine Learning & AI</div>
+        <div class="skill-tags">
+          <span>Scikit-learn</span><span>TensorFlow</span>
+          <span>Random Forest</span><span>Decision Trees</span>
+          <span>K-Means</span><span>NLP</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-heading">Data Analysis & Visualisation</div>
+        <div class="skill-tags">
+          <span>Pandas</span><span>NumPy</span>
+          <span>Tableau</span><span>Power BI</span>
+          <span>Matplotlib</span><span>ggplot2</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-heading">Statistical Methods</div>
+        <div class="skill-tags">
+          <span>Regression</span><span>Hypothesis Testing</span>
+          <span>Time Series</span><span>A/B Testing</span>
+          <span>Clustering</span><span>Causal Inference</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-heading">Tools & Frameworks</div>
+        <div class="skill-tags">
+          <span>Git</span><span>Excel</span><span>Tidyverse</span>
+          <span>Jupyter</span><span>VS Code</span>
+          <span>Docker</span><span>AWS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- EDUCATION -->
     <section class="section" id="education">
