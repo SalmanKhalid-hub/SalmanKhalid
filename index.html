@@ -48,18 +48,49 @@
     a:hover { opacity: 0.85; }
 
 
-
- .nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 
+.nav-inner {
+  max-width: 1080px; /* 🔑 tighter like Pablo */
+  margin: 0 auto;
+  padding: 16px 24px;
 
-    .nav-links a:hover { color: var(--accent); }
+  display: flex;
+  align-items: center;
+  gap: 36px; /* 🔑 keeps SK close to About */
+}
+
+.nav-logo {
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 26px; /* 🔑 exact Pablo spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+    
 
     /* GLOBAL SECTIONS */
     main { display: block; }
@@ -485,10 +516,7 @@
     grid-template-columns: 1fr;
   }
 }
-.nav-logo {
-  letter-spacing: 0.25em;
-  font-weight: 600;
-}
+
 
 .landing {
   position: relative;
@@ -505,47 +533,7 @@
   );
   pointer-events: none;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
-}
 
-.nav-inner {
-  max-width: 1200px;        /* THIS is what tightens it */
-  margin: 0 auto;
-  padding: 18px 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-  .nav-logo {
-  margin-right: 32px;
-}
-
-.nav-logo {
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  transform: translateX(2px); /* subtle, Pablo-level */
-}
-    
-
-.nav-links {
-  list-style: none;   /* removes dots */
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 22px;
-}
-.nav-links li {
-  margin: 0;
-  padding: 0;
-}
 
   .avatar-outer {
   width: 320px;
