@@ -257,7 +257,7 @@
 .about-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 14px;
   margin-top: 40px;
 }
 
@@ -265,7 +265,7 @@
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 18px;
+  padding: 16px;
 }
 
 .about-mini-card strong {
@@ -280,14 +280,14 @@
 
 .about-skills {
   display: grid;
-  gap: 24px;
+  gap: 18px;
 }
 
 .skill-box {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 22px;
+  padding: 18px 20px;
 }
 
 .skill-heading {
@@ -295,7 +295,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 900px) {
@@ -338,6 +338,48 @@
   margin-bottom: 24px;
 }
 
+/* ABOUT HEADER ALIGNMENT */
+
+.about {
+  text-align: center;
+}
+
+.about-title {
+  max-width: 720px;
+  margin: 0 auto 12px;
+}
+
+.about-subtitle {
+  max-width: 520px;
+  margin: 0 auto 72px;
+}
+
+/* INTERACTIVE MINI CARDS */
+
+.about-mini-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  cursor: default;
+}
+
+.about-mini-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(201, 164, 92, 0.25);
+  border-color: rgba(201, 164, 92, 0.6);
+}
+
+    .skill-box {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.4);
+}
 
     
   </style>
