@@ -523,7 +523,6 @@
   }
 }
 
-
 .landing {
   position: relative;
 }
@@ -539,7 +538,6 @@
   );
   pointer-events: none;
 }
-
 
   .avatar-outer {
   width: 320px;
@@ -721,8 +719,23 @@
   );
   z-index: 2000;
 }
+/* SECTION DIVIDER */
+
+.section-divider {
+  width: 100%;
+  max-width: 1100px;
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 164, 92, 0.55),
+    transparent
+  );
+}
 
     
+
     
   </style>
 </head>
@@ -786,7 +799,9 @@
     </section>
 
     <!-- ABOUT -->
+    <div class="section-divider"></div>
    <section class="section about" id="about">
+     
   <div class="label">ABOUT ME</div>
 
   <h2 class="about-title">Turning Data Into Decisions</h2>
@@ -911,6 +926,11 @@
 </section>
 
     <!-- EDUCATION -->
+
+<div class="section-divider"></div>
+
+<section class="section education" id="education">
+
     <section class="section education" id="education">
   <div class="label">ACADEMIC BACKGROUND</div>
   <h2 class="section-title">Education</h2>
@@ -979,6 +999,8 @@
 
 
     <!-- PROJECTS -->
+  <div class="section-divider"></div>
+
     <section class="section" id="projects">
       <h2>Projects</h2>
 
@@ -998,6 +1020,10 @@
     </section>
 
     <!-- CONTACT -->
+<div class="section-divider"></div>
+
+<section class="section contact" id="contact">
+
   <section class="section contact" id="contact">
 
   <div class="label">GET IN TOUCH</div>
