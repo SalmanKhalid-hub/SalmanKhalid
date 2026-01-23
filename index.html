@@ -565,7 +565,6 @@
   animation: pulse 4s infinite;
 }
 
-
 /* CONTACT – PABLO STYLE */
 
 .contact {
@@ -653,6 +652,34 @@
   }
 }
 
+/* CONTACT LANGUAGES */
+
+.contact-languages {
+  margin-top: 72px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.language-tag {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(201, 164, 92, 0.12);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  color: var(--text);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.language-tag:hover {
+  transform: translateY(-3px);
+  background: rgba(201, 164, 92, 0.22);
+  box-shadow: 0 10px 24px rgba(201, 164, 92, 0.25);
+}
 
     
     
@@ -985,6 +1012,12 @@
     </div>
 
   </div>
+    <div class="contact-languages">
+  <div class="language-tag">🇬🇧 English</div>
+  <div class="language-tag">🇵🇰 Urdu</div>
+  <div class="language-tag">🇸🇦 Arabic</div>
+</div>
+
 </section>
 
 
