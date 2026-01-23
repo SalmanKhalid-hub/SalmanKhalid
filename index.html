@@ -653,12 +653,38 @@
 }
 
 /* CONTACT LANGUAGES */
+/* CONTACT DIVIDER + LANGUAGES */
+
+.contact-divider {
+  width: 100%;
+  max-width: 1100px;
+  height: 1px;
+  margin: 80px auto 32px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 164, 92, 0.6),
+    transparent
+  );
+}
+
+.contact-languages-wrap {
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-languages-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
 
 .contact-languages {
-  margin-top: 72px;
   display: flex;
   gap: 16px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -680,6 +706,21 @@
   background: rgba(201, 164, 92, 0.22);
   box-shadow: 0 10px 24px rgba(201, 164, 92, 0.25);
 }
+/* SCROLL PROGRESS BAR */
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    90deg,
+    #c9a45c,
+    #ff6a3d
+  );
+  z-index: 2000;
+}
 
     
     
@@ -687,6 +728,7 @@
 </head>
 
 <body>
+  <div id="scroll-progress"></div>
 
   <nav class="navbar">
   <div class="nav-inner">
@@ -703,6 +745,17 @@
 
 
   <main>
+<script>
+  const progressBar = document.getElementById("scroll-progress");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = progress + "%";
+  });
+</script>
 
     <!-- HERO -->
     <section class="landing">
@@ -1012,6 +1065,12 @@
     </div>
 
   </div>
+
+<div class="contact-divider"></div>
+
+<div class="contact-languages-wrap">
+  <div class="contact-languages-title">Languages</div>
+    
     <div class="contact-languages">
   <div class="language-tag">🇬🇧 English</div>
   <div class="language-tag">🇵🇰 Urdu</div>
