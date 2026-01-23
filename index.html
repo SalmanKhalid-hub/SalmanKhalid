@@ -745,17 +745,6 @@
 
 
   <main>
-<script>
-  const progressBar = document.getElementById("scroll-progress");
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const progress = (scrollTop / docHeight) * 100;
-    progressBar.style.width = progress + "%";
-  });
-</script>
 
     <!-- HERO -->
     <section class="landing">
@@ -1086,5 +1075,17 @@
     <p class="muted">© 2025–2026 Salman Khalid · Built with HTML & CSS</p>
   </footer>
 
+<script>
+  const progressBar = document.getElementById("scroll-progress");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = progress + "%";
+  });
+</script>
+  
 </body>
 </html>
