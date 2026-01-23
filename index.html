@@ -20,13 +20,29 @@
     html { scroll-behavior: smooth; }
 
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding-top: 80px;
-    }
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background:
+    radial-gradient(
+      800px 400px at 80% 20%,
+      rgba(201, 164, 92, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      600px 300px at 20% 80%,
+      rgba(255, 106, 61, 0.10),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #0b0b0b 0%,
+      #070707 100%
+    );
+  color: var(--text);
+  line-height: 1.7;
+  padding-top: 80px;
+}
+
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { opacity: 0.85; }
@@ -486,7 +502,26 @@
     grid-template-columns: 1fr;
   }
 }
+.nav-logo {
+  letter-spacing: 0.25em;
+  font-weight: 600;
+}
 
+.landing {
+  position: relative;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    500px 300px at 60% 40%,
+    rgba(201, 164, 92, 0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+}
 
     
   </style>
@@ -496,7 +531,7 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <strong>Salman Khalid</strong>
+    <strong class="nav-logo">SK</strong>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#education">Education</a>
