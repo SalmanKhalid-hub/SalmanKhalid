@@ -817,6 +817,47 @@
 }
 
 
+/* PROJECT TITLE STYLING */
+
+.card strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+.card:hover strong {
+  color: #f0d08a;
+  text-shadow:
+    0 0 8px rgba(201, 164, 92, 0.45),
+    0 0 18px rgba(201, 164, 92, 0.25);
+}
+/* TITLE ACCENT LINE */
+
+.card strong::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #c9a45c, transparent);
+  opacity: 0.6;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover strong::after {
+  width: 60px;
+  opacity: 1;
+}
+
+
+
+
+    
 
     
     
