@@ -772,8 +772,53 @@
   box-shadow: 0 10px 24px rgba(201, 164, 92, 0.35);
 }
 
-    
 
+  /* PROJECTS SECTION AURA */
+
+#projects {
+  position: relative;
+}
+
+#projects::before {
+  content: "";
+  position: absolute;
+  inset: -120px 0;
+  background:
+    radial-gradient(
+      600px 300px at 50% 20%,
+      rgba(201, 164, 92, 0.12),
+      transparent 70%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+
+    .card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(201, 164, 92, 0.35),
+    0 0 40px rgba(201, 164, 92, 0.25);
+}
+
+.projects-grid:hover .card {
+  opacity: 0.55;
+  transform: scale(0.98);
+}
+
+.projects-grid:hover .card:hover {
+  opacity: 1;
+  transform: translateY(-8px) scale(1.02);
+}
+
+    .card:hover .project-tag {
+  background: rgba(201, 164, 92, 0.25);
+  box-shadow: 0 8px 20px rgba(201, 164, 92, 0.35);
+}
+
+
+
+    
     
   </style>
 </head>
