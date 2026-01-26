@@ -743,6 +743,34 @@
   transform: translateY(-4px);
   transition: 0.2s ease;
 }
+/* PROJECT TECH TAGS (MATCH TOOLS & FRAMEWORKS STYLE) */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.project-tag {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(201, 164, 92, 0.12);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  color: var(--text);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.project-tag:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(201, 164, 92, 0.22);
+  box-shadow: 0 10px 24px rgba(201, 164, 92, 0.35);
+}
 
     
 
@@ -1009,54 +1037,81 @@
 
 
     <!-- PROJECTS -->
-<div class="projects-grid">
+<!-- PROJECTS -->
+<div class="section-divider"></div>
 
-  <!-- PROJECT 1 -->
-  <a href="https://github.com/SalmanKhalid-hub/Marketing-Analytics-UCL"
-     target="_blank" class="card">
-    <strong>Marketing Analytics & Customer Targeting</strong>
-    <p class="muted">
-      Customer segmentation and predictive modelling using transaction data.
-    </p>
-    <span class="muted">R · Machine Learning · Clustering</span>
-  </a>
+<section class="section" id="projects">
+  <div class="label">SELECTED WORK</div>
+  <h2>Projects</h2>
 
-  <!-- PROJECT 2 -->
-  <a href="https://github.com/SalmanKhalid-hub/Programming-for-Business-Analytics-UCL"
-     target="_blank" class="card">
-    <strong>Predictive Analytics: Diabetes Risk Factors</strong>
-    <p class="muted">
-      Exploratory data analysis and machine learning project analysing diabetes
-      risk factors using CDC BRFSS 2015 data.
-    </p>
-    <span class="muted">Python · EDA · Classification</span>
-  </a>
+  <div class="projects-grid">
 
-  <!-- PROJECT 3 -->
-  <a href="https://github.com/SalmanKhalid-hub/Statistics-for-Analytics-UCL"
-     target="_blank" class="card">
-    <strong>Statistical Analysis of Sustainability & Costs</strong>
-    <p class="muted">
-      Applied statistical analysis of recycling performance and operating
-      expenditure across European firms.
-    </p>
-    <span class="muted">Statistics · Regression · Econometrics</span>
-  </a>
+    <!-- PROJECT 1 -->
+    <a href="https://github.com/SalmanKhalid-hub/Marketing-Analytics-UCL"
+       target="_blank" class="card">
+      <strong>Marketing Analytics & Customer Targeting</strong>
+      <p class="muted">
+        Customer segmentation and predictive modelling using transaction data.
+      </p>
+      <div class="project-tags">
+        <span class="project-tag">R</span>
+        <span class="project-tag">Machine Learning</span>
+        <span class="project-tag">Clustering</span>
+      </div>
+    </a>
 
-  <!-- PROJECT 4 -->
-  <a href="https://github.com/SalmanKhalid-hub/Marks-Spencer-Retail-Strategy-Analysis-UCL"
-     target="_blank" class="card">
-    <strong>Marks & Spencer Retail Strategy Analysis</strong>
-    <p class="muted">
-      Data-driven business strategy project using customer surveys,
-      regression analysis, and scenario modelling.
-    </p>
-    <span class="muted">Strategy · Analytics · Consulting</span>
-  </a>
+    <!-- PROJECT 2 -->
+    <a href="https://github.com/SalmanKhalid-hub/Programming-for-Business-Analytics-UCL"
+       target="_blank" class="card">
+      <strong>Predictive Analytics: Diabetes Risk Factors</strong>
+      <p class="muted">
+        Exploratory data analysis and machine learning project analysing diabetes
+        risk factors using CDC BRFSS 2015 data.
+      </p>
+      <div class="project-tags">
+        <span class="project-tag">Python</span>
+        <span class="project-tag">EDA</span>
+        <span class="project-tag">Classification</span>
+      </div>
+    </a>
 
-</div>
+    <!-- PROJECT 3 -->
+    <a href="https://github.com/SalmanKhalid-hub/Statistics-for-Analytics-UCL"
+       target="_blank" class="card">
+      <strong>Statistical Analysis of Sustainability & Costs</strong>
+      <p class="muted">
+        Applied statistical analysis of recycling performance and operating
+        expenditure across European firms.
+      </p>
+      <div class="project-tags">
+        <span class="project-tag">Statistics</span>
+        <span class="project-tag">Regression</span>
+        <span class="project-tag">Econometrics</span>
+      </div>
+    </a>
+
+    <!-- PROJECT 4 -->
+    <a href="https://github.com/SalmanKhalid-hub/Marks-Spencer-Retail-Strategy-Analysis-UCL"
+       target="_blank" class="card">
+      <strong>Marks & Spencer Retail Strategy Analysis</strong>
+      <p class="muted">
+        Data-driven business strategy using customer surveys,
+        regression analysis, and scenario modelling.
+      </p>
+      <div class="project-tags">
+        <span class="project-tag">Strategy</span>
+        <span class="project-tag">Analytics</span>
+        <span class="project-tag">Consulting</span>
+      </div>
+    </a>
+
+  </div>
+</section>
 
 
+
+
+  
     <!-- CONTACT -->
 <div class="section-divider"></div>
 
